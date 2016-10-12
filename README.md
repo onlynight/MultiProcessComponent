@@ -10,3 +10,29 @@ MultiProcessComponent
 + ```android:processs```值有以下两种书写方式：
 	1. ```android:process=":remote"```这样前面带有引号切不包含包名的写法表示该组件为应用的私有组件，外部无法通过任何形式访问组件。实际上该组件所在进程的名称为```<package>:remote```，例如我的组件名称就是```com.github.onlynight:remote```
     2. ```android:process="com.github.onlynight.remote"```这种不带引号的写法就表示该组件可被其他应用访问，且该组件所在进程的名称为```com.github.onlynight.remote```
++ demo 如下
+```
+<application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity android:name=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+    
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+    </activity>
+    <activity android:name=".SecondActivity"
+              android:process=":remote"/>
+    
+    <service
+        android:name=".ThirdService"
+        android:enabled="true"
+        android:exported="true"
+        android:process="org.github.lion.multiprocesscomponent.remote"/>
+</application>
+```
++ 输出日志截图如下
