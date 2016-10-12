@@ -36,6 +36,6 @@ MultiProcessComponent
 </application>
 ```
 + 输出日志截图如下
-![org.github.lion.multiprocesscomponent](./images/org.github.lion.multiprocesscomponent.png)
-![org.github.lion.multiprocesscomponent.remote](./images/org.github.lion.multiprocesscomponent.remote.png)
-![org.github.lion.multiprocesscomponent:remote](./images/org.github.lion.multiprocesscomponent-remote.png)
+![org.github.lion.multiprocesscomponent](https://github.com/onlynight/MultiProcessComponent/blob/master/images/org.github.lion.multiprocesscomponent.png)
+![org.github.lion.multiprocesscomponent.remote](https://github.com/onlynight/MultiProcessComponent/blob/master/images/org.github.lion.multiprocesscomponent.remote.png)
+![org.github.lion.multiprocesscomponent:remote](https://github.com/onlynight/MultiProcessComponent/blob/master/images/org.github.lion.multiprocesscomponent-remote.png)
