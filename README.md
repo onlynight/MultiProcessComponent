@@ -11,7 +11,8 @@ MultiProcessComponent
 	1. ```android:process=":remote"```这样前面带有引号切不包含包名的写法表示该组件为应用的私有组件，外部无法通过任何形式访问组件。实际上该组件所在进程的名称为```<package>:remote```，例如我的组件名称就是```com.github.onlynight:remote```
     2. ```android:process="com.github.onlynight.remote"```这种不带引号的写法就表示该组件可被其他应用访问，且该组件所在进程的名称为```com.github.onlynight.remote```
 + demo 如下
-```
+
+```xml
 <application
     android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
